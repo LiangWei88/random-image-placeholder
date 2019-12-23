@@ -7,7 +7,7 @@ beforeEach('create generator instance', () => {
 });
 
 describe('Declaration', () => {
-  it('Class exist', function() {
+  it('Class exist', () => {
     expect(ImgPlaceholder).to.be.a('function');
   });
   it('Constructor works', () => {
