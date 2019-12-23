@@ -20,6 +20,7 @@ describe('Declaration', () => {
     expect(imgGenerator.options).to.be.a('object');
   });
 });
+
 describe('Functionality', () => {
   it('generate functoin return a url', () => {
     const url = imgGenerator.generate();
@@ -55,6 +56,7 @@ describe('Functionality', () => {
     expect(imgGenerator.options.abc).to.equal('abc');
   });
 });
+
 describe('Options', () => {
   it('no options', () => {
     const url = imgGenerator.generate();

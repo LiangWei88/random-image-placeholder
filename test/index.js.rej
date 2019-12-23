@@ -1,10 +1,10 @@
 diff a/test/index.js b/test/index.js	(rejected hunks)
-@@ -7,2 +7,2 @@ beforeEach('create generator instance', () => {
+@@ -6,2 +6,2 @@ beforeEach('create generator instance', () => {
 -    imgGenerator = new ImgPlaceholder();
 -})
 +  imgGenerator = new ImgPlaceholder();
 +});
-@@ -11,13 +11,13 @@ describe('Declaration', () => {
+@@ -10,13 +10,13 @@ describe('Declaration', () => {
 -    it('Class exist', function () {
 -        expect(ImgPlaceholder).to.be.a('function');
 -    });
@@ -31,7 +31,7 @@ diff a/test/index.js b/test/index.js	(rejected hunks)
 +    expect(imgGenerator.options).to.be.a('object');
 +  });
 +});
-@@ -25,34 +25,34 @@ describe('Functionality', () => {
+@@ -24,34 +24,34 @@ describe('Functionality', () => {
 -    it('generate functoin return a url', () => {
 -        const url = imgGenerator.generate();
 -        expect(url).to.match(/^https?:\/\/.+/);
@@ -100,7 +100,7 @@ diff a/test/index.js b/test/index.js	(rejected hunks)
 +    expect(imgGenerator.options.abc).to.equal('abc');
 +  });
 +});
-@@ -60,18 +60,18 @@ describe('Options', () => {
+@@ -59,18 +59,18 @@ describe('Options', () => {
 -    it('no options', () => {
 -        const url = imgGenerator.generate();
 -        expect(url).to.equal('https://picsum.photos/200');
