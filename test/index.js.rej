@@ -2,9 +2,6 @@ diff a/test/index.js b/test/index.js	(rejected hunks)
 @@ -7 +7 @@ beforeEach('create generator instance', () => {
 -})
 +});
-@@ -10 +10 @@ describe('Declaration', () => {
--  it('Class exist', function () {
-+  it('Class exist', function() {
 @@ -14,2 +14,2 @@ describe('Declaration', () => {
 -    expect(imgGenerator).to.be.a('object')
 -  })
