@@ -4,7 +4,7 @@
   "description": "generate a image placeholder url. 产生一个占位图片链接 ",
   "main": "index.js",
   "scripts": {
-    "test": "ls"
+    "test": "istanbul cover _mocha -- -t 5000"
   },
   "husky": {
     "hooks": {
@@ -26,9 +26,12 @@
   "author": "LiangWei",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.7.2",
     "eslint-config-google": "^0.14.0",
     "husky": "^3.1.0",
-    "lint-staged": "^9.5.0"
+    "istanbul": "^0.4.5",
+    "lint-staged": "^9.5.0",
+    "mocha": "^6.2.2"
   }
 }
