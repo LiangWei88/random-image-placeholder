@@ -1,8 +1,12 @@
 {
   "name": "random-image-placeholder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generate a image placeholder url. 产生一个占位图片链接 ",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiangWei88/random-image-placeholder.git"
+  },
   "scripts": {
     "test": "istanbul cover _mocha -- -t 5000"
   },
