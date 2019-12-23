@@ -1,57 +1,108 @@
 diff a/test/index.js b/test/index.js	(rejected hunks)
-@@ -7 +7 @@ beforeEach('create generator instance', () => {
+@@ -2 +2 @@ const expect = require('chai').expect;
+-const ImgPlaceholder = require('../index')
++const ImgPlaceholder = require('../index');
+@@ -6,2 +6,2 @@ beforeEach('create generator instance', () => {
+-  imgGenerator = new ImgPlaceholder()
 -})
++  imgGenerator = new ImgPlaceholder();
 +});
+@@ -11,2 +11,2 @@ describe('Declaration', () => {
+-    expect(ImgPlaceholder).to.be.a('function')
+-  })
++    expect(ImgPlaceholder).to.be.a('function');
++  });
 @@ -14,2 +14,2 @@ describe('Declaration', () => {
 -    expect(imgGenerator).to.be.a('object')
 -  })
 +    expect(imgGenerator).to.be.a('object');
 +  });
-@@ -18 +18 @@ describe('Declaration', () => {
+@@ -17,2 +17,2 @@ describe('Declaration', () => {
+-    expect(imgGenerator.generate).to.be.a('function')
 -  })
++    expect(imgGenerator.generate).to.be.a('function');
 +  });
-@@ -21,2 +21,2 @@ describe('Declaration', () => {
+@@ -20,3 +20,3 @@ describe('Declaration', () => {
+-    expect(imgGenerator.options).to.be.a('object')
 -  })
 -})
++    expect(imgGenerator.options).to.be.a('object');
 +  });
 +});
-@@ -28 +28 @@ describe('Functionality', () => {
+@@ -26,3 +26,3 @@ describe('Functionality', () => {
+-    const url = imgGenerator.generate()
+-    expect(url).to.match(/^https?:\/\/.+/)
 -  })
++    const url = imgGenerator.generate();
++    expect(url).to.match(/^https?:\/\/.+/);
 +  });
-@@ -31 +31 @@ describe('Functionality', () => {
+@@ -30,2 +30,2 @@ describe('Functionality', () => {
+-    expect(imgGenerator.options.width).to.be.a('number')
 -  })
++    expect(imgGenerator.options.width).to.be.a('number');
 +  });
-@@ -36 +36 @@ describe('Functionality', () => {
+@@ -36,6 +36,6 @@ describe('Functionality', () => {
 -      abc: 'abc'
-+      abc: 'abc',
-@@ -41 +41 @@ describe('Functionality', () => {
+-    })
+-    expect(newOptions.width).to.equal(400)
+-    expect(newOptions.height).to.equal(500)
+-    expect(newOptions.abc).to.equal('abc')
 -  })
++      abc: 'abc',
++    });
++    expect(newOptions.width).to.equal(400);
++    expect(newOptions.height).to.equal(500);
++    expect(newOptions.abc).to.equal('abc');
 +  });
+@@ -43,2 +43,2 @@ describe('Functionality', () => {
+-    const imgGenerator = new ImgPlaceholder()
+-    expect(imgGenerator.options.width).to.equal(200)
++    const imgGenerator = new ImgPlaceholder();
++    expect(imgGenerator.options.width).to.equal(200);
 @@ -47 +47 @@ describe('Functionality', () => {
 -  })
 +  });
-@@ -52 +52 @@ describe('Functionality', () => {
+@@ -52,7 +52,7 @@ describe('Functionality', () => {
 -      abc: 'abc'
-+      abc: 'abc',
-@@ -57,2 +57,2 @@ describe('Functionality', () => {
+-    })
+-    expect(imgGenerator.options.width).to.equal(400)
+-    expect(imgGenerator.options.height).to.equal(500)
+-    expect(imgGenerator.options.abc).to.equal('abc')
 -  })
 -})
++      abc: 'abc',
++    });
++    expect(imgGenerator.options.width).to.equal(400);
++    expect(imgGenerator.options.height).to.equal(500);
++    expect(imgGenerator.options.abc).to.equal('abc');
 +  });
 +});
-@@ -64 +64 @@ describe('Options', () => {
+@@ -62,3 +62,3 @@ describe('Options', () => {
+-    const url = imgGenerator.generate()
+-    expect(url).to.equal('https://picsum.photos/200')
 -  })
++    const url = imgGenerator.generate();
++    expect(url).to.equal('https://picsum.photos/200');
 +  });
-@@ -67 +67 @@ describe('Options', () => {
+@@ -67,5 +67,5 @@ describe('Options', () => {
 -      width: 400
-+      width: 400,
-@@ -71 +71 @@ describe('Options', () => {
+-    })
+-    const url = imgGenerator.generate()
+-    expect(url).to.equal('https://picsum.photos/400')
 -  })
++      width: 400,
++    });
++    const url = imgGenerator.generate();
++    expect(url).to.equal('https://picsum.photos/400');
 +  });
-@@ -74 +74 @@ describe('Options', () => {
+@@ -74,5 +74,5 @@ describe('Options', () => {
 -      width: 300
-+      width: 300,
-@@ -77,2 +77,2 @@ describe('Options', () => {
+-    })
+-    expect(url).to.match(/^https?:\/\/.+300$/)
 -  })
 -})
++      width: 300,
++    });
++    expect(url).to.match(/^https?:\/\/.+300$/);
 +  });
 +});
