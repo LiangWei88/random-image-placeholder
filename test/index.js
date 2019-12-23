@@ -1,7 +1,6 @@
 const expect = require('chai').expect;
 const ImgPlaceholder = require('../index');
 
-
 let imgGenerator;
 beforeEach('create generator instance', () => {
   imgGenerator = new ImgPlaceholder();
