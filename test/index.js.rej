@@ -31,7 +31,7 @@ diff a/test/index.js b/test/index.js	(rejected hunks)
 +    expect(imgGenerator.options).to.be.a('object');
 +  });
 +});
-@@ -24,34 +24,34 @@ describe('Functionality', () => {
+@@ -25,34 +25,34 @@ describe('Functionality', () => {
 -    it('generate functoin return a url', () => {
 -        const url = imgGenerator.generate();
 -        expect(url).to.match(/^https?:\/\/.+/);
@@ -100,7 +100,7 @@ diff a/test/index.js b/test/index.js	(rejected hunks)
 +    expect(imgGenerator.options.abc).to.equal('abc');
 +  });
 +});
-@@ -59,18 +59,18 @@ describe('Options', () => {
+@@ -61,18 +61,18 @@ describe('Options', () => {
 -    it('no options', () => {
 -        const url = imgGenerator.generate();
 -        expect(url).to.equal('https://picsum.photos/200');
